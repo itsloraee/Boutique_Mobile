@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BoutiqueController;
 
-Route::get('/', 'BoutiqueController@index')->name('boutique');
+Route::get('/', [BoutiqueController::class, 'index'])->name('boutique');
 return view();

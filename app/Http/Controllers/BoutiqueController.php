@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\product;
+use App\Models\category;
 use Illuminate\Http\Request;
 
 class BoutiqueController extends Controller
