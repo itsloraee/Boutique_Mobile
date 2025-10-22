@@ -2,4 +2,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('boutique', 'BoutiqueController@index')->name('user');
+Route::get('boutique', 'BoutiqueController@index')->name('boutique');
