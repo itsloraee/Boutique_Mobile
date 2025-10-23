@@ -13,10 +13,12 @@ class BoutiqueController extends Controller
      */
     public function index()
     {
-        $categories = category::all();
-        $products = product::all();
-
-        return view('index', compact('categories' , 'products'));
+        //$categories = category::all();//
+        //$products = product::all();//
+        
+        //Récupérer 6 produits de la base à l'aide du model product
+        $products = product::limit(6)->get();
+        return view('index', compact('products'));
     }
 
     /**
