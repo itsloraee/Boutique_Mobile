@@ -42,8 +42,13 @@ class BoutiqueController extends Controller
      */
     public function show(string $id)
     {
-        //
+        // Sélectionner un produit à partir d'un identifiant 
+            $product = product::find($id);
+            return view('detail' , compact('product'));
+    
+    
     }
+
 
     /**
      * Show the form for editing the specified resource.

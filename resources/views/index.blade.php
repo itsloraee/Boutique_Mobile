@@ -7,7 +7,7 @@
         
         @forelse ($products as $product)
         
-        <x-card-product/>
+        <x-card-product :product="$product" />
         
         @empty
             Il n'y a aucun produits en base
